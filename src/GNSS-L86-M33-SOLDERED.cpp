@@ -1,32 +1,33 @@
 /**
  **************************************************
  *
- * @file        Generic-easyC-SOLDERED.cpp
+ * @file        GNSS-L86-M33-SOLDERED.cpp
  * @brief       Example functions to overload in base class.
  *
  *
  * @copyright GNU General Public License v3.0
- * @authors     @ soldered.com
+ * @authors     borna@soldered.com
  ***************************************************/
 
 
-#include "Generic-easyC-SOLDERED.h"
+#include "GNSS-L86-M33-SOLDERED.h"
 
 /**
  * @brief                   Sensor specific native constructor.
  *
  * @param int _pin          Example parameter.
  */
-Sensor::Sensor(int _pin)
+GNSS::GNSS(int _rx, int _tx) : gnssSerial(_rx, _tx)
 {
-    pin = _pin;
+    rxPin = _rx;
+    txPin = _tx;
     native = 1;
 }
 
 /**
  * @brief                   Overloaded function for virtual in base class to initialize sensor specific.
  */
-void Sensor::initializeNative()
+void GNSS::initializeNative()
 {
-    pinMode(pin, INPUT);
+    gnssSerial.begin(9600);
 }
