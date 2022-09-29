@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sendaddress_0',['sendAddress',['../class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3',1,'EasyC']]],
-  ['senddata_1',['sendData',['../class_easy_c.html#afe8aa014ae53cad3b0f3c42f59277195',1,'EasyC']]],
-  ['sensor_2',['Sensor',['../class_sensor.html#a2b8ea6b15267f6fa0e263f57a09f6b62',1,'Sensor']]]
+  ['easyc_0',['EasyC',['../class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd',1,'EasyC']]],
+  ['encode_1',['encode',['../class_tiny_g_p_s_plus.html#ad7b78320b7e4967df17c6a27008a5154',1,'TinyGPSPlus']]],
+  ['endoftermhandler_2',['endOfTermHandler',['../class_tiny_g_p_s_plus.html#ad03e05d24ecc96c27814eb17adfb38db',1,'TinyGPSPlus']]]
 ];

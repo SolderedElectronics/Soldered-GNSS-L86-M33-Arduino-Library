@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pin_0',['pin',['../class_sensor.html#a0efecf34431610766469857f25e113da',1,'Sensor']]]
+  ['failedchecksumcount_0',['failedChecksumCount',['../class_tiny_g_p_s_plus.html#ac829f43b23f5d50e888034170451cb73',1,'TinyGPSPlus']]]
 ];
