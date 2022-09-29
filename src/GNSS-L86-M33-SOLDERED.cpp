@@ -2,7 +2,7 @@
  **************************************************
  *
  * @file        GNSS-L86-M33-SOLDERED.cpp
- * @brief       Example functions to overload in base class.
+ * @brief       Source file for L86-M33 GNSS breakout
  *
  *
  * @copyright GNU General Public License v3.0
@@ -13,9 +13,10 @@
 #include "GNSS-L86-M33-SOLDERED.h"
 
 /**
- * @brief                   Sensor specific native constructor.
+ * @brief                   L86-M33 GNSS Library constructor.
  *
- * @param int _pin          Example parameter.
+ * @param int _rx           UART receive data pin (connected to the TX data pin on GNSS module)
+ * @param int _tx           UART transmit data pin (connected to the RX data pin on GNSS module)          
  */
 GNSS::GNSS(int _rx, int _tx) : gnssSerial(_rx, _tx)
 {
@@ -25,7 +26,7 @@ GNSS::GNSS(int _rx, int _tx) : gnssSerial(_rx, _tx)
 }
 
 /**
- * @brief                   Overloaded function for virtual in base class to initialize sensor specific.
+ * @brief                    Initializer function for L86-M33 breakout board.
  */
 void GNSS::initializeNative()
 {
