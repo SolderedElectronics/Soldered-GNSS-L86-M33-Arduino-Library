@@ -16,7 +16,7 @@
  * @brief                   L86-M33 GNSS Library constructor.
  *
  * @param int _rx           UART receive data pin (connected to the TX data pin on GNSS module)
- * @param int _tx           UART transmit data pin (connected to the RX data pin on GNSS module)          
+ * @param int _tx           UART transmit data pin (connected to the RX data pin on GNSS module)
  */
 GNSS::GNSS(int _rx, int _tx) : gnssSerial(_rx, _tx)
 {
