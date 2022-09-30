@@ -13,11 +13,11 @@
 #define __GNSS_L86_M33_SOLDERED_H__
 
 #include "Arduino.h"
-#include "libs/Generic-easyC/easyC.hpp"
 #include "libs/TinyGPSPlus/src/TinyGPSPlus.h"
+#include "libs/Generic-easyC/easyC.hpp"
 
 #if defined(ARDUINO_ESP32_DEV)
-#include "libs/SoftwareSerial/SoftwareSerial.h"
+#include "libs/ESPSoftwareSerial/ESPSoftwareSerial.h"
 #else
 #include "SoftwareSerial.h"
 #endif
