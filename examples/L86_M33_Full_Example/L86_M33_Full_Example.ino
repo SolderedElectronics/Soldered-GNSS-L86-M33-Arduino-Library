@@ -71,7 +71,7 @@ void loop()
         (unsigned long)GNSS::distanceBetween(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon) / 1000;
     printInt(distanceKmToOsijek, gps.location.isValid(), 9);
 
-    double courseToOSijek = GNSS::courseTo(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon);
+    double courseToOsijek = GNSS::courseTo(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon);
 
     printFloat(courseToOsijek, gps.location.isValid(), 7, 2);
 
