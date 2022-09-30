@@ -22,6 +22,9 @@ class GNSS : public EasyC, public TinyGPSPlus
   public:
     GNSS(int _rx, int _tx);
     SoftwareSerial gnssSerial;
+    void sendCommand(char *_cmd);
+    void sendChecksum(char *_s);
+    char intToHexChar(int _c);
 
   protected:
     void initializeNative();

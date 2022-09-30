@@ -1,10 +1,10 @@
 /**
  **************************************************
  *
- * @file        L86_M33_Basic_Readings.ino
- * @brief       This code will try to read GNSS Time and Date as well as GPS Latitude and Longitude and display it on
- *the Arduino Serial Monitor. Connect GNSS module and one of the Dasduino boards, upload the code and open serial
- *monitor at 9600 bauds to see the data.
+ * @file        L86_M33_Advanced_Example.ino
+ * @brief       This example will show you how to use advanced features of the L86-M33 GNSS module like Multi-tone AIC,
+ *EASY Technology Mode, AlwaysLocate, etc). List of all advanced features of this module can be found in the L86-M33
+ *datasheet, L86-M33 Protocol Specification or in the PMTK Protocol User Manual.
  *
  *              For best results, GNSS module must be outside!
  *
@@ -24,7 +24,6 @@
  *
  * @authors     borna@soldered.com
  ***************************************************/
-
 #include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
 
 // Define pins for the GNSS module
@@ -34,6 +33,17 @@
 // Create an object for the library called gps
 GNSS gps(GNSS_TX, GNSS_RX);
 
+// AlwaysLocateTM Mode Command (there is on need for the checksum, it will be added automaticly)
+char alwaysLocateCmd[] = {"$PMTK225,8"};
+
+// Command for Multi-tone AIC (there is on need for the checksum, it will be added automaticly)
+char multitoneAICCmd[] = {"$PMTK 286,1"};
+
+// Send only GLL, GGA and ZDA NMEA messages
+// {$PMTK514, GLL, RMC, VTG, GGA, GSA, GSV, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED,
+// RESERVED, RESERVED, RESERVED, RESERVED, ZDA, RESERVED}
+char nmeaMessageFilterCmd[] = {"$PMTK314,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0"};
+
 void setup()
 {
     // Init serial communication for Serial Monitor at 9600 bauds. Higher baud rate can cause problems while sending a
@@ -42,6 +52,15 @@ void setup()
 
     // Init L86-M33 library.
     gps.begin();
+
+    // Activate AlwaysLocateTM Mode
+    gps.sendCommand(alwaysLocateCmd);
+
+    // Activate Multi-tone AIC
+    gps.sendCommand(multitoneAICCmd);
+
+    // Filter out NMEA messages (send only GLL, GGA and ZDA NMEA messages)
+    gps.sendCommand(nmeaMessageFilterCmd);
 }
 
 void loop()
