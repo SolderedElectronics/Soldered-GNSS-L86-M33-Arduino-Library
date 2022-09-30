@@ -112,6 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb7988f2a01027548adcb44634996fb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_n_s_s.html#afb7988f2a01027548adcb44634996fb0">GNSS</a> (int _rx, int _tx)</td></tr>
 <tr class="memdesc:afb7988f2a01027548adcb44634996fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">L86-M33 <a class="el" href="class_g_n_s_s.html">GNSS</a> Library constructor.  <a href="class_g_n_s_s.html#afb7988f2a01027548adcb44634996fb0">More...</a><br /></td></tr>
 <tr class="separator:afb7988f2a01027548adcb44634996fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6309dfa40aae5f0512a76652ae465247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_n_s_s.html#a6309dfa40aae5f0512a76652ae465247">sendCommand</a> (char *_cmd)</td></tr>
+<tr class="memdesc:a6309dfa40aae5f0512a76652ae465247"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a custom command to the <a class="el" href="class_g_n_s_s.html">GNSS</a> module.  <a href="class_g_n_s_s.html#a6309dfa40aae5f0512a76652ae465247">More...</a><br /></td></tr>
+<tr class="separator:a6309dfa40aae5f0512a76652ae465247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7667ab6524229eca67703286de6566ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_n_s_s.html#a7667ab6524229eca67703286de6566ba">sendChecksum</a> (char *_s)</td></tr>
+<tr class="memdesc:a7667ab6524229eca67703286de6566ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a checksum to the <a class="el" href="class_g_n_s_s.html">GNSS</a> module for the sent command.  <a href="class_g_n_s_s.html#a7667ab6524229eca67703286de6566ba">More...</a><br /></td></tr>
+<tr class="separator:a7667ab6524229eca67703286de6566ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04fe6f2112137473339031aab89b1c47"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_g_n_s_s.html#a04fe6f2112137473339031aab89b1c47">intToHexChar</a> (int _c)</td></tr>
+<tr class="memdesc:a04fe6f2112137473339031aab89b1c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a integer into one HEX Char (for 10 as input it will return 'A')  <a href="class_g_n_s_s.html#a04fe6f2112137473339031aab89b1c47">More...</a><br /></td></tr>
+<tr class="separator:a04fe6f2112137473339031aab89b1c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_easy_c"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_easy_c')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_easy_c.html">EasyC</a></td></tr>
 <tr class="memitem:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">EasyC</a> ()</td></tr>
 <tr class="memdesc:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main constructor for easyC version.  <a href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">More...</a><br /></td></tr>
@@ -283,6 +292,90 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a04fe6f2112137473339031aab89b1c47" name="a04fe6f2112137473339031aab89b1c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04fe6f2112137473339031aab89b1c47">&#9670;&#160;</a></span>intToHexChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char GNSS::intToHexChar </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts a integer into one HEX Char (for 10 as input it will return 'A') </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">int</td><td>_c Integer that needs to be converted into HEX Char</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char HEX Char (for 10 as input, result will be char 'A') <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a7667ab6524229eca67703286de6566ba" name="a7667ab6524229eca67703286de6566ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7667ab6524229eca67703286de6566ba">&#9670;&#160;</a></span>sendChecksum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GNSS::sendChecksum </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a checksum to the <a class="el" href="class_g_n_s_s.html">GNSS</a> module for the sent command. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">char</td><td>*_s Command string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>There must be no checksum at the end of the command. It will be calculated and added automatically. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a6309dfa40aae5f0512a76652ae465247" name="a6309dfa40aae5f0512a76652ae465247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6309dfa40aae5f0512a76652ae465247">&#9670;&#160;</a></span>sendCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GNSS::sendCommand </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a custom command to the <a class="el" href="class_g_n_s_s.html">GNSS</a> module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">char</td><td>*_cmd Command string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>There must be no checksum at the end of the command. It will be calculated and added automatically. <br  />
+ </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="afd74702516fe4aa1db7090471c999e41" name="afd74702516fe4aa1db7090471c999e41"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd74702516fe4aa1db7090471c999e41">&#9670;&#160;</a></span>gnssSerial</h2>
@@ -354,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_g_n_s_s.html">GNSS</a></li>
         <li class="footer">
-            Generated on Thu Sep 29 2022 14:01:57 for Soldered L86 M33 GNSS Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Fri Sep 30 2022 07:44:50 for Soldered L86 M33 GNSS Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.5.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

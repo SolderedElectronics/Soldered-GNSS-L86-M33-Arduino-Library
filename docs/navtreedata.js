@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Soldered L86 M33 GNSS Library", "index.html", [
-    [ "GNSS L86-M33 breakout Arduino library", "index.html", null ],
+    [ "GNSS L86-M33 Breakout Arduino Library", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
