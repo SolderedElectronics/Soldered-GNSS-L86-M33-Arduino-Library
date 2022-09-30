@@ -16,7 +16,7 @@
  * @brief                   L86-M33 GNSS Library constructor.
  *
  * @param int _rx           UART receive data pin (connected to the TX data pin on GNSS module)
- * @param int _tx           UART transmit data pin (connected to the RX data pin on GNSS module)
+ * @param int _tx           UART transmit data pin (connected to the RX data pin on GNSS module)          
  */
 GNSS::GNSS(int _rx, int _tx) : gnssSerial(_rx, _tx)
 {
@@ -39,9 +39,8 @@ void GNSS::initializeNative()
  * @brief                   Sends a custom command to the GNSS module
  *
  * @param char *_cmd        Command string
- *
- * @note                    There must be no checksum at the end of the command. It will be calculated and added
- * automatically.
+ * 
+ * @note                    There must be no checksum at the end of the command. It will be calculated and added automatically.      
  */
 void GNSS::sendCommand(char *_cmd)
 {
@@ -56,9 +55,8 @@ void GNSS::sendCommand(char *_cmd)
  * @brief                   Sends a checksum to the GNSS module for the sent command.
  *
  * @param char *_s          Command string
- *
- * @note                    There must be no checksum at the end of the command. It will be calculated and added
- * automatically.
+ * 
+ * @note                    There must be no checksum at the end of the command. It will be calculated and added automatically.      
  */
 void GNSS::sendChecksum(char *_s)
 {
@@ -89,8 +87,8 @@ void GNSS::sendChecksum(char *_s)
  * @brief                   Converts a integer into one HEX Char (for 10 as input it will return 'A')
  *
  * @param int _c            Integer that needs to be converted into HEX Char
- *
- * @return char             HEX Char (for 10 as input, result will be char 'A')
+ * 
+ * @return char             HEX Char (for 10 as input, result will be char 'A')    
  */
 char GNSS::intToHexChar(int _c)
 {

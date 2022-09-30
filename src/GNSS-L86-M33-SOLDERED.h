@@ -17,7 +17,7 @@
 #include "libs/Generic-easyC/easyC.hpp"
 
 #if defined(ARDUINO_ESP32_DEV)
-#include "libs/SoftwareSerial/SoftwareSerial.h"
+#include "libs/ESPSoftwareSerial/ESPSoftwareSerial.h"
 #else
 #include "SoftwareSerial.h"
 #endif

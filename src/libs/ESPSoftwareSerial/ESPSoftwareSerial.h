@@ -24,6 +24,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #ifndef __SoftwareSerial_h
 #define __SoftwareSerial_h
 
+#if defined(ARDUINO_ESP32_DEV)
+
 #include "circular_queue/circular_queue.h"
 #include <Stream.h>
 
@@ -285,5 +287,7 @@ private:
     bool m_rxCurParity = false;
     Delegate<void(int available), void*> receiveHandler;
 };
+
+#endif
 
 #endif // __SoftwareSerial_h
