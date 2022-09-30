@@ -13,15 +13,18 @@
 #define __GNSS_L86_M33_SOLDERED_H__
 
 #include "Arduino.h"
-#include "SoftwareSerial.h"
-#include "libs/Generic-easyC/easyC.hpp"
 #include "libs/TinyGPSPlus/src/TinyGPSPlus.h"
+#include "libs/Generic-easyC/easyC.hpp"
+#include "SoftwareSerial.h"
 
 class GNSS : public EasyC, public TinyGPSPlus
 {
   public:
     GNSS(int _rx, int _tx);
     SoftwareSerial gnssSerial;
+    void sendCommand(char *_cmd);
+    void sendChecksum(char *_s);
+    char intToHexChar(int _c);
 
   protected:
     void initializeNative();

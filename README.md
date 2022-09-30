@@ -1,12 +1,12 @@
-# GNSS L86-M33 breakout Arduino library
+# GNSS L86-M33 Breakout Arduino Library
 
 [![Make docs and publish to GitHub Pages](https://github.com/e-radionicacom/Soldered-GNSS-L86-M33-Arduino-Library/actions/workflows/make_docs.yml/badge.svg?branch=dev)](https://github.com/e-radionicacom/Soldered-GNSS-L86-M33-Arduino-Library/actions/workflows/make_docs.yml)
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [GNSS L86-M33 breakout](https://www.solde.red/33320)                                                            |
+| [Soldered GNSS L86-M33 Breakout](https://www.solde.red/33320)                                                            |
 
-GNSS L86-M33 breakout board for GNSS from Soldered, compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
+GNSS L86-M33 Breakout Board for GNSS from Soldered, compliant to [easyC ecosystem](https://www.soldered.com/easyC). 
 
 ### Repository Contents
 - **/src** - source files for the library (.h & .cpp)
@@ -20,7 +20,7 @@ You can find hardware design for this board in GNSS L86-M33 breakout hardware re
 
 Access Arduino library documentation [here](https://e-radionicacom.github.io/Soldered-GNSS-L86-M33-Arduino-Library/).
 
-- Tutorial for using the GNSS L86-M33 breakout board
+- Tutorial for using the GNSS L86-M33 Breakout Board
 - Installing an Arduino library
 
 ### Board compatibility

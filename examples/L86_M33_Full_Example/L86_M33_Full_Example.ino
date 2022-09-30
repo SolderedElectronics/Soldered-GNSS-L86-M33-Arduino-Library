@@ -4,9 +4,17 @@
  * @file        L86_M33_Full_Example.ino
  * @brief       This code will show all options that library provides. It will show classic GPS Lat & Lon and time &
  *date, but it will also show speed and fix status (and also checksum data) on the Arduino Serial Monitor.
+ *              
+ *              For best results, GNSS module must be outside!
+ *
+ *              Soldered L86-M33 GNSS Breakout: www.solde.red/333201
+ *              Dasduino Core: www.solde.red/333037
+ *              Dasduino Connect: www.solde.red/333034
+ *              Dasduino ConnectPlus: www.solde.red/333033
  *
  *              Connections:
- *              L86-L33         Dasduino RX D3
+ *              L86-L33         Dasduino Core
+ *              RX              D3
  *              TX              D4
  *              5V              VCC
  *              GND             GND
@@ -27,8 +35,9 @@ GNSS gps(GNSS_TX, GNSS_RX);
 
 void setup()
 {
-    // Init serial communication for Serial Monitor at 115200 bauds.
-    Serial.begin(115200);
+    // Init serial communication for Serial Monitor at 9600 bauds. Higher baud rate can cause problems while sending a
+    // command.
+    Serial.begin(9600);
 
     // Init L86-M33 library.
     gps.begin();
@@ -46,7 +55,7 @@ void loop()
 {
     static const double osijekLat = 45.5550, osijekLon = 18.6955;
 
-    // Print all available data into the serial monitor (lat, lon, GNSS Fix Age, T&D, speed, altitude) 
+    // Print all available data into the serial monitor (lat, lon, GNSS Fix Age, T&D, speed, altitude)
     printInt(gps.satellites.value(), gps.satellites.isValid(), 5);
     printFloat(gps.hdop.hdop(), gps.hdop.isValid(), 6, 1);
     printFloat(gps.location.lat(), gps.location.isValid(), 11, 6);
@@ -59,8 +68,7 @@ void loop()
     printStr(gps.course.isValid() ? GNSS::cardinal(gps.course.deg()) : "*** ", 6);
 
     unsigned long distanceKmToOsijek =
-        (unsigned long)GNSS::distanceBetween(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon) /
-        1000;
+        (unsigned long)GNSS::distanceBetween(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon) / 1000;
     printInt(distanceKmToOsijek, gps.location.isValid(), 9);
 
     double courseToOSijek = GNSS::courseTo(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon);
