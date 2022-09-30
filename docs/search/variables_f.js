@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['updated_0',['updated',['../struct_tiny_g_p_s_location.html#a6e80ce526dff7b9ac38fea8044baf16f',1,'TinyGPSLocation::updated()'],['../struct_tiny_g_p_s_date.html#af92ee9facc35b637b589320ddffcce32',1,'TinyGPSDate::updated()'],['../struct_tiny_g_p_s_time.html#a8af55d20c789d6bc3c759fd42d588c7b',1,'TinyGPSTime::updated()'],['../struct_tiny_g_p_s_decimal.html#af0803d568a59f6212f2e88e2e5ee6077',1,'TinyGPSDecimal::updated()'],['../struct_tiny_g_p_s_integer.html#a8551627f1054eea5ca2bd871606fa8a1',1,'TinyGPSInteger::updated()'],['../class_tiny_g_p_s_custom.html#a9cb408f7deeff94aeec23b49a3036f97',1,'TinyGPSCustom::updated()']]]
+  ['parity_0',['parity',['../class_tiny_g_p_s_plus.html#adfe5e8fc602e2777c6df87fb212b1ab6',1,'TinyGPSPlus']]],
+  ['passedchecksumcount_1',['passedChecksumCount',['../class_tiny_g_p_s_plus.html#a0010f4b025a85b9ee717d78d316d3365',1,'TinyGPSPlus']]],
+  ['prev_2',['prev',['../classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator.html#a3b202c46bb5c1d8ec927d692cb873eb6',1,'delegate::detail::MultiDelegatePImpl::iterator']]],
+  ['ptr_3',['ptr',['../classstd_1_1unique__ptr.html#ab7f20efc0292d505bc6e46853f3df1e3',1,'std::unique_ptr']]]
 ];

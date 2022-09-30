@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['failedchecksumcount_0',['failedChecksumCount',['../class_tiny_g_p_s_plus.html#ac829f43b23f5d50e888034170451cb73',1,'TinyGPSPlus']]]
+  ['encodedcharcount_0',['encodedCharCount',['../class_tiny_g_p_s_plus.html#a80ce0fa1f373c26c83f517c8bde3686c',1,'TinyGPSPlus']]],
+  ['err_1',['err',['../class_easy_c.html#a8b880d5daf116adde0cc436f1e4c0853',1,'EasyC']]]
 ];

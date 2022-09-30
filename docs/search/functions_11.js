@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_0',['value',['../struct_tiny_g_p_s_date.html#a718150ae16f68afa9ae81f9d1b3ce3f4',1,'TinyGPSDate::value()'],['../struct_tiny_g_p_s_time.html#afcdb632fee9d144b1414c9d7b95719f1',1,'TinyGPSTime::value()'],['../struct_tiny_g_p_s_decimal.html#ac3ce80976e5d8456e9f211b910a6cb19',1,'TinyGPSDecimal::value()'],['../struct_tiny_g_p_s_integer.html#a67de7e76d61dbd25eb32f701d8ce867b',1,'TinyGPSInteger::value()'],['../class_tiny_g_p_s_custom.html#a03bb66f8d3e078b21c8a5033a88d8a32',1,'TinyGPSCustom::value()']]]
+  ['unique_5fptr_0',['unique_ptr',['../classstd_1_1unique__ptr.html#adf801223424be049d8ea8c99eb730caf',1,'std::unique_ptr::unique_ptr() noexcept'],['../classstd_1_1unique__ptr.html#a6dc4259a1e7f96906cf54c7a0f2fbbc9',1,'std::unique_ptr::unique_ptr(pointer p)']]]
 ];

@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['rawdegrees_0',['RawDegrees',['../struct_raw_degrees.html',1,'RawDegrees'],['../struct_raw_degrees.html#a156d5ced092fa1473b9b669a29be3509',1,'RawDegrees::RawDegrees()']]],
-  ['rawlat_1',['rawLat',['../struct_tiny_g_p_s_location.html#abe5f28b0d636a1031af3cd98af863af6',1,'TinyGPSLocation']]],
-  ['rawlatdata_2',['rawLatData',['../struct_tiny_g_p_s_location.html#a05f5e708acc18037290aa7da4287845f',1,'TinyGPSLocation']]],
-  ['rawlng_3',['rawLng',['../struct_tiny_g_p_s_location.html#a4e20b4067a448ca0003fc65a3d3864d2',1,'TinyGPSLocation']]],
-  ['rawlngdata_4',['rawLngData',['../struct_tiny_g_p_s_location.html#a76809e2b20ccb0722886093eb230bf29',1,'TinyGPSLocation']]],
-  ['rawnewlatdata_5',['rawNewLatData',['../struct_tiny_g_p_s_location.html#a5c75e48c14bbdabef12f157634d9d96d',1,'TinyGPSLocation']]],
-  ['rawnewlngdata_6',['rawNewLngData',['../struct_tiny_g_p_s_location.html#a198d72c29f14b74d72460adcdc4e30f8',1,'TinyGPSLocation']]],
-  ['readdata_7',['readData',['../class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a',1,'EasyC']]],
-  ['readme_2emd_8',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['readregister_9',['readRegister',['../class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376',1,'EasyC']]],
-  ['rxpin_10',['rxPin',['../class_g_n_s_s.html#af759a0c894d2baf07ab520fcbc197b9d',1,'GNSS']]]
+  ['parity_0',['parity',['../class_tiny_g_p_s_plus.html#adfe5e8fc602e2777c6df87fb212b1ab6',1,'TinyGPSPlus']]],
+  ['parsedecimal_1',['parseDecimal',['../class_tiny_g_p_s_plus.html#a06d9bf0c1f0d0963511dc05e2f121121',1,'TinyGPSPlus']]],
+  ['parsedegrees_2',['parseDegrees',['../class_tiny_g_p_s_plus.html#a00627eaffc625bf366e4c984014fbf29',1,'TinyGPSPlus']]],
+  ['passedchecksum_3',['passedChecksum',['../class_tiny_g_p_s_plus.html#a54c027a84bdeed40ac25bb54010d7c96',1,'TinyGPSPlus']]],
+  ['passedchecksumcount_4',['passedChecksumCount',['../class_tiny_g_p_s_plus.html#a0010f4b025a85b9ee717d78d316d3365',1,'TinyGPSPlus']]],
+  ['peek_5',['peek',['../classcircular__queue.html#ab51c0d60c4398df3245977f12cf45c89',1,'circular_queue']]],
+  ['pointer_6',['pointer',['../classstd_1_1unique__ptr.html#ad4aad093d8bb0cf9f045e21101ef3c23',1,'std::unique_ptr']]],
+  ['pop_7',['pop',['../classcircular__queue.html#a510912b13f5e9f7837ff3df10eea823b',1,'circular_queue']]],
+  ['pop_5fn_8',['pop_n',['../classcircular__queue.html#aa2b3b67ab2b368efac7e343aa62d12ab',1,'circular_queue']]],
+  ['pop_5frequeue_9',['pop_requeue',['../classcircular__queue__mp.html#a7c37e00fb91213c56fd931d430f7750d',1,'circular_queue_mp']]],
+  ['prev_10',['prev',['../classdelegate_1_1detail_1_1_multi_delegate_p_impl_1_1iterator.html#a3b202c46bb5c1d8ec927d692cb873eb6',1,'delegate::detail::MultiDelegatePImpl::iterator']]],
+  ['ptr_11',['ptr',['../classstd_1_1unique__ptr.html#ab7f20efc0292d505bc6e46853f3df1e3',1,'std::unique_ptr']]],
+  ['push_12',['push',['../classcircular__queue.html#af5b15190c1f45f7c67b247cf852260c1',1,'circular_queue::push() __attribute__((always_inline))'],['../classcircular__queue.html#ab9f72980c5204145933c16b5c63bc22a',1,'circular_queue::push(T &amp;&amp;val) __attribute__((always_inline))'],['../classcircular__queue.html#a8a3d33f046c7cb9c5ea68f991d6dfe0a',1,'circular_queue::push(const T &amp;val) __attribute__((always_inline))'],['../classcircular__queue__mp.html#a73116069a8c6750d61026cff5b404258',1,'circular_queue_mp::push()=delete'],['../classcircular__queue__mp.html#a1bb45a1e07b90b2f4ee531fbcc192bb3',1,'circular_queue_mp::push(T &amp;&amp;val)'],['../classcircular__queue__mp.html#aa6088d52da8e07a40698948a72f01ad3',1,'circular_queue_mp::push(const T &amp;val)']]],
+  ['push_5fn_13',['push_n',['../classcircular__queue.html#a08c00615e438bb04e0b5efe853044e43',1,'circular_queue::push_n()'],['../classcircular__queue__mp.html#a55371c8f4d47d1b57a7a17f27fd8f0be',1,'circular_queue_mp::push_n()']]],
+  ['pushpeek_14',['pushpeek',['../classcircular__queue.html#af17f7e80e74c9d866e44d6a33b8c1389',1,'circular_queue']]]
 ];

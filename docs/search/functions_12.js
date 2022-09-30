@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['year_0',['year',['../struct_tiny_g_p_s_date.html#ae2cc914fec377b429d99f01204f50d60',1,'TinyGPSDate']]]
+  ['value_0',['value',['../struct_tiny_g_p_s_date.html#a718150ae16f68afa9ae81f9d1b3ce3f4',1,'TinyGPSDate::value()'],['../struct_tiny_g_p_s_time.html#afcdb632fee9d144b1414c9d7b95719f1',1,'TinyGPSTime::value()'],['../struct_tiny_g_p_s_decimal.html#ac3ce80976e5d8456e9f211b910a6cb19',1,'TinyGPSDecimal::value()'],['../struct_tiny_g_p_s_integer.html#a67de7e76d61dbd25eb32f701d8ce867b',1,'TinyGPSInteger::value()'],['../class_tiny_g_p_s_custom.html#a03bb66f8d3e078b21c8a5033a88d8a32',1,'TinyGPSCustom::value()']]],
+  ['vptrtofunaptrexec_1',['vPtrToFunAPtrExec',['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a2ad3b4ade98db3141e00e3868592447f',1,'delegate::detail::DelegatePImpl::vPtrToFunAPtrExec(void *self, P... args)'],['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a2ad3b4ade98db3141e00e3868592447f',1,'delegate::detail::DelegatePImpl::vPtrToFunAPtrExec(void *self, P... args)'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a84a6393d9da9dc981c67252cb6a211bb',1,'delegate::detail::DelegateImpl::vPtrToFunAPtrExec(void *self)'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a84a6393d9da9dc981c67252cb6a211bb',1,'delegate::detail::DelegateImpl::vPtrToFunAPtrExec(void *self)']]]
 ];

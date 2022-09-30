@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hdop_0',['hdop',['../class_tiny_g_p_s_plus.html#a0bb6a7eb2d0261095911d71c8c067546',1,'TinyGPSPlus']]]
+  ['gnssserial_0',['gnssSerial',['../class_g_n_s_s.html#afd74702516fe4aa1db7090471c999e41',1,'GNSS']]]
 ];

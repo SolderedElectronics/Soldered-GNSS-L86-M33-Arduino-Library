@@ -10,5 +10,7 @@ var searchData=
   ['setdate_7',['setDate',['../struct_tiny_g_p_s_date.html#a2ff2893de6b59fd4dcf828c6296e2e2e',1,'TinyGPSDate']]],
   ['setlatitude_8',['setLatitude',['../struct_tiny_g_p_s_location.html#abacba4b118a3351fed607874c85b747c',1,'TinyGPSLocation']]],
   ['setlongitude_9',['setLongitude',['../struct_tiny_g_p_s_location.html#ac55555d5765570efadfe1846d60b32e1',1,'TinyGPSLocation']]],
-  ['settime_10',['setTime',['../struct_tiny_g_p_s_time.html#a07646db66f928524a46b22030f3367c6',1,'TinyGPSTime']]]
+  ['settime_10',['setTime',['../struct_tiny_g_p_s_time.html#a07646db66f928524a46b22030f3367c6',1,'TinyGPSTime']]],
+  ['size_11',['size',['../structstd_1_1array.html#a0033b6f7c4840399987bb6df1a9c644f',1,'std::array']]],
+  ['store_12',['store',['../classstd_1_1atomic.html#aad268b7d4e59e0757e55e994d4f4062e',1,'std::atomic']]]
 ];

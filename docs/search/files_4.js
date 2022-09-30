@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['tinygps_2b_2b_2ecpp_0',['TinyGPS++.cpp',['../_tiny_g_p_s_09_09_8cpp.html',1,'']]],
-  ['tinygps_2b_2b_2eh_1',['TinyGPS++.h',['../_tiny_g_p_s_09_09_8h.html',1,'']]],
-  ['tinygpsplus_2eh_2',['TinyGPSPlus.h',['../_tiny_g_p_s_plus_8h.html',1,'']]]
+  ['multidelegate_2eh_0',['MultiDelegate.h',['../_multi_delegate_8h.html',1,'']]]
 ];

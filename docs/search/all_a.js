@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['lastcommittime_0',['lastCommitTime',['../struct_tiny_g_p_s_location.html#a190521e30929eed4edc5288346646f16',1,'TinyGPSLocation::lastCommitTime()'],['../struct_tiny_g_p_s_date.html#acbece939f279507806570bb108311a88',1,'TinyGPSDate::lastCommitTime()'],['../struct_tiny_g_p_s_time.html#a3a033dc00767099f6c1b3c328ff586e4',1,'TinyGPSTime::lastCommitTime()'],['../struct_tiny_g_p_s_decimal.html#aaa47eb71175c36d4ba3ba0e94d0c752e',1,'TinyGPSDecimal::lastCommitTime()'],['../struct_tiny_g_p_s_integer.html#ae738e3b0de372d0e8ba329f790cbc732',1,'TinyGPSInteger::lastCommitTime()'],['../class_tiny_g_p_s_custom.html#acd99fe5bbe5f274de1c172079e80110b',1,'TinyGPSCustom::lastCommitTime()']]],
-  ['lat_1',['lat',['../struct_tiny_g_p_s_location.html#a86c3acea4f317b427eebb667e4d05a49',1,'TinyGPSLocation']]],
-  ['libraryversion_2',['libraryVersion',['../class_tiny_g_p_s_plus.html#a9cf0da36b5237ea295b4544f4a6d2273',1,'TinyGPSPlus']]],
-  ['lng_3',['lng',['../struct_tiny_g_p_s_location.html#a544e9009a5580b2fd5466821a5e5b782',1,'TinyGPSLocation']]],
-  ['location_4',['location',['../class_tiny_g_p_s_plus.html#a886255f412f8e01f84e5104d36315fb3',1,'TinyGPSPlus']]]
+  ['kilometers_0',['kilometers',['../struct_tiny_g_p_s_altitude.html#a1eb3e5b425784fc0db3e9ffe0f77f741',1,'TinyGPSAltitude']]],
+  ['kind_1',['kind',['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a06c9439442dcb8f18826f471a90778f2',1,'delegate::detail::DelegatePImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a9312d86012e4833b3e75c7d7158feb0c',1,'delegate::detail::DelegatePImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_p_impl_3_01void_00_01_r_00_01_p_8_8_8_01_4.html#a51d2c143bc1014b141485fb98dd0397c',1,'delegate::detail::DelegatePImpl&lt; void, R, P... &gt;::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a72dc96f76a36289814e534e18a7e00d3',1,'delegate::detail::DelegateImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a6d02cd03cdb2805abfc550c5c3079ccc',1,'delegate::detail::DelegateImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4.html#a6085a2a8b7addb7deecc5f79202c0078',1,'delegate::detail::DelegateImpl&lt; void, R &gt;::kind()']]],
+  ['kmph_2',['kmph',['../struct_tiny_g_p_s_speed.html#a7fee3c8f9f2fcc5f4a517bd6108f79dd',1,'TinyGPSSpeed']]],
+  ['knots_3',['knots',['../struct_tiny_g_p_s_speed.html#aa3a38ce4ece3d8062c794b73f260395e',1,'TinyGPSSpeed']]]
 ];

@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['native_0',['native',['../class_easy_c.html#abb766b60f26778dbc64e8792fd754729',1,'EasyC']]],
-  ['negative_1',['negative',['../struct_raw_degrees.html#a39c31d2d0332155a4d2c975cec0a796f',1,'RawDegrees']]],
-  ['newdate_2',['newDate',['../struct_tiny_g_p_s_date.html#a81d6d90be898cf44e804e86a2f4a3d2d',1,'TinyGPSDate']]],
-  ['newtime_3',['newTime',['../struct_tiny_g_p_s_time.html#ab6794a7906f46e0309ffa31a3682ea92',1,'TinyGPSTime']]],
-  ['newval_4',['newval',['../struct_tiny_g_p_s_decimal.html#ad8fa7dfb23e381b2353ea4ecaeaebc8b',1,'TinyGPSDecimal::newval()'],['../struct_tiny_g_p_s_integer.html#a7f9bc12f55134d4b4028edca243afc87',1,'TinyGPSInteger::newval()']]],
-  ['next_5',['next',['../class_tiny_g_p_s_custom.html#a994b5ad843074007b061252293347270',1,'TinyGPSCustom']]]
+  ['kind_0',['kind',['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a06c9439442dcb8f18826f471a90778f2',1,'delegate::detail::DelegatePImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_p_impl.html#a9312d86012e4833b3e75c7d7158feb0c',1,'delegate::detail::DelegatePImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_p_impl_3_01void_00_01_r_00_01_p_8_8_8_01_4.html#a51d2c143bc1014b141485fb98dd0397c',1,'delegate::detail::DelegatePImpl&lt; void, R, P... &gt;::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a72dc96f76a36289814e534e18a7e00d3',1,'delegate::detail::DelegateImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl.html#a6d02cd03cdb2805abfc550c5c3079ccc',1,'delegate::detail::DelegateImpl::kind()'],['../classdelegate_1_1detail_1_1_delegate_impl_3_01void_00_01_r_01_4.html#a6085a2a8b7addb7deecc5f79202c0078',1,'delegate::detail::DelegateImpl&lt; void, R &gt;::kind()']]]
 ];

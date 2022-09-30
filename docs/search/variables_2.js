@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['course_0',['course',['../class_tiny_g_p_s_plus.html#ad7800d3decbe58e355f5229bba231868',1,'TinyGPSPlus']]],
-  ['cursentencetype_1',['curSentenceType',['../class_tiny_g_p_s_plus.html#a8b89eadf418a22fdaf2c7520f7b084a3',1,'TinyGPSPlus']]],
-  ['curtermnumber_2',['curTermNumber',['../class_tiny_g_p_s_plus.html#a5688c9f32b16fab9433f0fde869d0e89',1,'TinyGPSPlus']]],
-  ['curtermoffset_3',['curTermOffset',['../class_tiny_g_p_s_plus.html#a2b12aee8c9a1f550ee09b74a9b4ae570',1,'TinyGPSPlus']]],
-  ['customcandidates_4',['customCandidates',['../class_tiny_g_p_s_plus.html#ad817698ca7fa61998a2cd42cee5bfbc8',1,'TinyGPSPlus']]],
-  ['customelts_5',['customElts',['../class_tiny_g_p_s_plus.html#a814ec9664ba8f1b28870342e5308e2cd',1,'TinyGPSPlus']]]
+  ['begindone_0',['beginDone',['../class_easy_c.html#a2f55de657a84e73edda23dae91d30436',1,'EasyC']]],
+  ['billionths_1',['billionths',['../struct_raw_degrees.html#a13564009c60e20dbf03b158114d1c0e2',1,'RawDegrees']]],
+  ['buffer_2',['buffer',['../class_tiny_g_p_s_custom.html#afcfd3fec763e381e0ea41bf59085fa93',1,'TinyGPSCustom']]],
+  ['byte_5fall_5fbits_5fset_3',['BYTE_ALL_BITS_SET',['../_software_serial_8cpp.html#a598154fbc2ca9d498197580a562d42a0',1,'SoftwareSerial.cpp']]]
 ];
