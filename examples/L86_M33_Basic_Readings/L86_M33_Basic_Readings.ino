@@ -47,10 +47,10 @@ void setup()
 void loop()
 {
     // If there is any data on the UART of the GNSS, read it and send every char to the library
-    while (gps.gnssSerial.available() > 0)
+    while (gps.gnssSerial->available() > 0)
     {
         // Is something is successfully decoded, display new data.
-        if (gps.encode(gps.gnssSerial.read()))
+        if (gps.encode(gps.gnssSerial->read()))
         {
             displayInfo();
         }
