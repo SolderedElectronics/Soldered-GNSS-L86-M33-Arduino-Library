@@ -110,12 +110,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ea672a225a32eab52c2b20733fd26bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">EasyC</a> ()</td></tr>
 <tr class="memdesc:a2ea672a225a32eab52c2b20733fd26bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main constructor for easyC version.  <br /></td></tr>
 <tr class="separator:a2ea672a225a32eab52c2b20733fd26bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b5a82b8a59daea79de76e496457e176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a1b5a82b8a59daea79de76e496457e176">begin</a> ()</td></tr>
-<tr class="memdesc:a1b5a82b8a59daea79de76e496457e176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes sensors on native or easyC on default address.  <br /></td></tr>
-<tr class="separator:a1b5a82b8a59daea79de76e496457e176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e71467da6f38cbe47b10e96694a4f91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a9e71467da6f38cbe47b10e96694a4f91">begin</a> (uint8_t _address)</td></tr>
-<tr class="memdesc:a9e71467da6f38cbe47b10e96694a4f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes sensors on supplied i2c address.  <br /></td></tr>
-<tr class="separator:a9e71467da6f38cbe47b10e96694a4f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12c80d433dfbb0098a11d47e37aca34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#ac12c80d433dfbb0098a11d47e37aca34">begin</a> ()</td></tr>
+<tr class="memdesc:ac12c80d433dfbb0098a11d47e37aca34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes sensors on native or easyC on default address.  <br /></td></tr>
+<tr class="separator:ac12c80d433dfbb0098a11d47e37aca34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac414fcd9b1fa0f75b5ac17c0791ad674"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#ac414fcd9b1fa0f75b5ac17c0791ad674">begin</a> (uint8_t _address)</td></tr>
+<tr class="memdesc:ac414fcd9b1fa0f75b5ac17c0791ad674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes sensors on supplied i2c address.  <br /></td></tr>
+<tr class="separator:ac414fcd9b1fa0f75b5ac17c0791ad674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48c8aa55d48ef0cc11047cab0735c998"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998">initializeNative</a> ()=0</td></tr>
 <tr class="separator:a48c8aa55d48ef0cc11047cab0735c998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10aa7df19e8c7bf12cd720b662f317a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a10aa7df19e8c7bf12cd720b662f317a3">sendAddress</a> (char regAddr)</td></tr>
@@ -173,8 +173,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1b5a82b8a59daea79de76e496457e176" name="a1b5a82b8a59daea79de76e496457e176"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5a82b8a59daea79de76e496457e176">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+<a id="ac12c80d433dfbb0098a11d47e37aca34" name="ac12c80d433dfbb0098a11d47e37aca34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac12c80d433dfbb0098a11d47e37aca34">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void EasyC::begin </td>
+          <td class="memname">bool EasyC::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -200,8 +200,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9e71467da6f38cbe47b10e96694a4f91" name="a9e71467da6f38cbe47b10e96694a4f91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e71467da6f38cbe47b10e96694a4f91">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+<a id="ac414fcd9b1fa0f75b5ac17c0791ad674" name="ac414fcd9b1fa0f75b5ac17c0791ad674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac414fcd9b1fa0f75b5ac17c0791ad674">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void EasyC::begin </td>
+          <td class="memname">bool EasyC::begin </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>_address</em></td><td>)</td>
@@ -523,7 +523,7 @@ Public Attributes</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_easy_c.html">EasyC</a></li>
         <li class="footer">
-            Generated on Tue Mar 28 2023 10:46:01 for Soldered L86 M33 GNSS Library by <a href="http://www.doxygen.org/index.html">
+            Generated on Thu Apr 13 2023 06:33:46 for Soldered L86 M33 GNSS Library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.6.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.

@@ -1,8 +1,8 @@
 var class_easy_c =
 [
     [ "EasyC", "class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd", null ],
-    [ "begin", "class_easy_c.html#a1b5a82b8a59daea79de76e496457e176", null ],
-    [ "begin", "class_easy_c.html#a9e71467da6f38cbe47b10e96694a4f91", null ],
+    [ "begin", "class_easy_c.html#ac12c80d433dfbb0098a11d47e37aca34", null ],
+    [ "begin", "class_easy_c.html#ac414fcd9b1fa0f75b5ac17c0791ad674", null ],
     [ "initializeNative", "class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998", null ],
     [ "readData", "class_easy_c.html#a9a3d39be50b348768bc4b5dea3dae01a", null ],
     [ "readRegister", "class_easy_c.html#a45bd6c915c1fa0998e273f69ee2d2376", null ],

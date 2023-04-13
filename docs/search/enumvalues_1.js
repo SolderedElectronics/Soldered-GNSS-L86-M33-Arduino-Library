@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['gps_5fsentence_5fgpgga_0',['GPS_SENTENCE_GPGGA',['../class_tiny_g_p_s_plus.html#a8e7ab4a890bfa1676897705848601824a21da219c3e59be9c2ce2b0beff76918f',1,'TinyGPSPlus']]],
-  ['gps_5fsentence_5fgprmc_1',['GPS_SENTENCE_GPRMC',['../class_tiny_g_p_s_plus.html#a8e7ab4a890bfa1676897705848601824af9076c9ba9a752d528726536899f7dbe',1,'TinyGPSPlus']]],
-  ['gps_5fsentence_5fother_2',['GPS_SENTENCE_OTHER',['../class_tiny_g_p_s_plus.html#a8e7ab4a890bfa1676897705848601824a51c5c85d67cfa4fdd6865104564a89aa',1,'TinyGPSPlus']]]
+  ['chars_5fprocessed_0',['CHARS_PROCESSED',['../_g_n_s_s-_l86-_m33-_s_o_l_d_e_r_e_d_8h.html#a0f6b6e9ad4cd9f764924985b64cd92f1ada9715801450fcc4e8429f6425b225f4',1,'GNSS-L86-M33-SOLDERED.h']]]
 ];
