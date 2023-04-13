@@ -100,8 +100,8 @@ static void smartDelay(unsigned long ms)
     unsigned long start = millis();
     do
     {
-        while (gps.gnssSerial.available())
-            gps.encode(gps.gnssSerial.read());
+        while (gps.gnssSerial->available())
+            gps.encode(gps.gnssSerial->read());
     } while (millis() - start < ms);
 }
 

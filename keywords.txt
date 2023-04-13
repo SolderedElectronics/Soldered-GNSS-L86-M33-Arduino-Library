@@ -1,19 +1,42 @@
-##################################################
-# Syntax Coloring Map For Obstacle-Sensor-SOLDERED
-##################################################
+#######################################
+# Syntax Coloring Map
+#######################################
 
-##################################################
+#######################################
 # Datatypes (KEYWORD1)
-##################################################
+#######################################
+GNSS	KEYWORD1
 
-GNSS    KEYWORK1
-
-##################################################
+#######################################
 # Methods and Functions (KEYWORD2)
-##################################################
+#######################################
+getLatitude	KEYWORD2
+getLongitude	KEYWORD2
+getYear	KEYWORD2
+getMonth	KEYWORD2
+getDay	KEYWORD2
+getHour	KEYWORD2
+getMinute	KEYWORD2
+getSeconds	KEYWORD2
+getSpeed	KEYWORD2
+getAltitude	KEYWORD2
+getNumSatellites	KEYWORD2
+getHDOP	KEYWORD2
+getAge	KEYWORD2
+getDateTimeAge	KEYWORD2
+getCourseDeg	KEYWORD2
+getNumCharsProcessed	KEYWORD2
+getNumSentencesWithFix	KEYWORD2
+getNumFailedChecksums	KEYWORD2
+GNSSAvailable	KEYWORD2
+setMultiToneAIC	KEYWORD2
+setAlwaysLocate	KEYWORD2
+sendCommand	KEYWORD2
+sendChecksum	KEYWORD2
+intToHexChar	KEYWORD2
+initializeNative	KEYWORD2
 
-begin	KEYWORD2
 
-##################################################
+######################################
 # Constants (LITERAL1)
-##################################################
+######################################

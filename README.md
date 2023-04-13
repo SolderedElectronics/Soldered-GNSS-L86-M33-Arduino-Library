@@ -4,9 +4,11 @@
 
 | ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :------------------------------------------------------------------------------------: |
-|             [Soldered GNSS L86-M33 Breakout](https://www.solde.red/33320)              |
+|          [Soldered GNSS L86-M33 Breakout](https://www.solde.red/333201)                |
 
-GNSS L86-M33 Breakout Board for GNSS from Soldered, compliant to [easyC ecosystem](https://www.soldered.com/easyC).
+| ![Product name](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
+| :------------------------------------------------------------------------------------: |
+|     [Soldered GNSS L86-M33 Breakout with easyC](https://www.solde.red/333213)          |
 
 ### Repository Contents
 
