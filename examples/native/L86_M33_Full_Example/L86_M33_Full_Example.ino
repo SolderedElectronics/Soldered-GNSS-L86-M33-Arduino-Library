@@ -3,8 +3,9 @@
  *
  * @file        L86_M33_Full_Example.ino
  * @brief       This code will show all options that library provides. It will show classic GPS Lat & Lon and time &
- *date, but it will also show speed and fix status (and also checksum data) on the Arduino Serial Monitor.
- *              
+ *date, but it will also show speed and fix status (and also checksum data) on the Arduino Serial Monitor. At first GNSS
+ *will send out incorrect data (such as wrong time and date) until gets the vaild ones.
+ *
  *              For best results, GNSS module must be outside!
  *
  *              Soldered L86-M33 GNSS Breakout: www.solde.red/333201
@@ -19,9 +20,11 @@
  *              5V              VCC
  *              GND             GND
  *
+ * @note        This library uses Software Serial for UART communication. Also, this GNSS has an on-board antenna, so
+ *it's not needed to connect an external one. Using both at the same time can cause problems (it will take a much longer time
+ *to get GNSS fix). The battery is only for RTC clock and data backup.
  *
- *
- * @authors     borna@soldered.com
+ * @authors     Borna Biro for Soldered.com
  ***************************************************/
 
 #include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
@@ -29,6 +32,11 @@
 // Define pins for the GNSS module
 #define GNSS_RX 3
 #define GNSS_TX 4
+
+// Calculate the distance between the current GNSS location and the custom city (or place).
+// In this case, calculate the distance between your current GNSS location and Osijek, Croatia.
+#define CITY_LAT 45.5550
+#define CITY_LON 18.6955;
 
 // Create an object for the library called gps
 GNSS gps(GNSS_TX, GNSS_RX);
@@ -42,6 +50,9 @@ void setup()
     // Init L86-M33 library.
     gps.begin();
 
+    // Print out a few new lines so the header can be displayed correctly after MCU reset.
+    Serial.println("\n\n");
+
     // Show start of the table with all data.
     Serial.println(F("Sats HDOP  Latitude   Longitude   Fix  Date       Time     Date Alt    Course Speed Card  "
                      "Distance Course Card  Chars Sentences Checksum"));
@@ -53,7 +64,7 @@ void setup()
 
 void loop()
 {
-    static const double osijekLat = 45.5550, osijekLon = 18.6955;
+    static const double cityLat = CITY_LAT, cityLon = CITY_LON;
 
     // Print all available data into the serial monitor (lat, lon, GNSS Fix Age, T&D, speed, altitude)
     printInt(gps.satellites.value(), gps.satellites.isValid(), 5);
@@ -68,10 +79,10 @@ void loop()
     printStr(gps.course.isValid() ? GNSS::cardinal(gps.course.deg()) : "*** ", 6);
 
     unsigned long distanceKmToOsijek =
-        (unsigned long)GNSS::distanceBetween(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon) / 1000;
+        (unsigned long)GNSS::distanceBetween(gps.location.lat(), gps.location.lng(), cityLat, cityLon) / 1000;
     printInt(distanceKmToOsijek, gps.location.isValid(), 9);
 
-    double courseToOsijek = GNSS::courseTo(gps.location.lat(), gps.location.lng(), osijekLat, osijekLon);
+    double courseToOsijek = GNSS::courseTo(gps.location.lat(), gps.location.lng(), cityLat, cityLon);
 
     printFloat(courseToOsijek, gps.location.isValid(), 7, 2);
 
