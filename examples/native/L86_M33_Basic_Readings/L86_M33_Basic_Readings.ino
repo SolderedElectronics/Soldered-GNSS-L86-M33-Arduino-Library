@@ -4,7 +4,8 @@
  * @file        L86_M33_Basic_Readings.ino
  * @brief       This code will try to read GNSS Time and Date as well as GPS Latitude and Longitude and display it on
  *the Arduino Serial Monitor. Connect GNSS module and one of the Dasduino boards, upload the code and open serial
- *monitor at 9600 bauds to see the data.
+ *monitor at 9600 bauds to see the data. At first GNSS will send out incorrect data (such as wrong time and date) until
+ *gets the vaild ones.
  *
  *              For best results, GNSS module must be outside!
  *
@@ -20,9 +21,11 @@
  *              5V              VCC
  *              GND             GND
  *
+ * @note        This library uses Software Serial for UART communication. Also, this GNSS has an on-board antenna, so
+ *it's not needed to connect an external one. Using both at the same time can cause problems (it will take a much longer time
+ *to get GNSS fix). The battery is only for RTC clock and data backup.
  *
- *
- * @authors     borna@soldered.com
+ * @authors     Borna Biro for Soldered.com
  ***************************************************/
 
 #include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
@@ -33,6 +36,9 @@
 
 // Create an object for the library called gps
 GNSS gps(GNSS_TX, GNSS_RX);
+
+// Variable that keeps track when the last time GNSS data has been display on serial.
+unsigned long lastGnssDisplay = 0;
 
 void setup()
 {
@@ -52,7 +58,15 @@ void loop()
         // Is something is successfully decoded, display new data.
         if (gps.encode(gps.gnssSerial->read()))
         {
-            displayInfo();
+            // Check if the 500 milliseconds passed from the last data display.
+            if ((unsigned long)(millis() - lastGnssDisplay) > 500UL)
+            {
+                // Capture new timestap.
+                lastGnssDisplay = millis();
+
+                // Display new data.
+                displayInfo();
+            }
         }
     }
 
@@ -61,7 +75,10 @@ void loop()
     {
         Serial.println(F("No GPS detected: check wiring."));
         while (true)
-            ;
+        {
+            // Delay is needed for the ESP8266.
+            delay(10);
+        }
     }
 }
 

@@ -4,7 +4,8 @@
  * @file        L86_M33_Advanced_Example.ino
  * @brief       This example will show you how to use advanced features of the L86-M33 GNSS module like Multi-tone AIC,
  *EASY Technology Mode, AlwaysLocate, etc). List of all advanced features of this module can be found in the L86-M33
- *datasheet, L86-M33 Protocol Specification or in the PMTK Protocol User Manual.
+ *datasheet, L86-M33 Protocol Specification or in the PMTK Protocol User Manual. At first GNSS will send out incorrect
+ *data (such as wrong time and date) until gets the vaild ones.
  *
  *              For best results, GNSS module must be outside!
  *
@@ -20,9 +21,11 @@
  *              5V              VCC
  *              GND             GND
  *
+ * @note        This library uses Software Serial for UART communication. Also, this GNSS has an on-board antenna, so
+ *it's not needed to connect an external one. Using both at the same time can cause problems (it will take a much longer time
+ *to get GNSS fix). The battery is only for RTC clock and data backup.
  *
- *
- * @authors     borna@soldered.com
+ * @authors     Borna Biro for Soldered.com
  ***************************************************/
 #include "GNSS-L86-M33-SOLDERED.h" // Include L86-L33 GNSS Library
 
@@ -43,6 +46,9 @@ char multitoneAICCmd[] = {"$PMTK 286,1"};
 // {$PMTK514, GLL, RMC, VTG, GGA, GSA, GSV, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED, RESERVED,
 // RESERVED, RESERVED, RESERVED, RESERVED, ZDA, RESERVED}
 char nmeaMessageFilterCmd[] = {"$PMTK314,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0"};
+
+// Variable that keeps track when the last time GNSS data has been display on serial.
+unsigned long lastGnssDisplay = 0;
 
 void setup()
 {
@@ -71,7 +77,15 @@ void loop()
         // Is something is successfully decoded, display new data.
         if (gps.encode(gps.gnssSerial->read()))
         {
-            displayInfo();
+            // Check if the 250 milliseconds passed from the last data display.
+            if ((unsigned long)(millis() - lastGnssDisplay) > 250UL)
+            {
+                // Capture new timestap.
+                lastGnssDisplay = millis();
+
+                // Display new data.
+                displayInfo();
+            }
         }
     }
 
@@ -80,7 +94,10 @@ void loop()
     {
         Serial.println(F("No GPS detected: check wiring."));
         while (true)
-            ;
+        {
+            // Delay is needed for the ESP8266.
+            delay(10);
+        }
     }
 }
 
