@@ -5,7 +5,7 @@
    @brief       Firmware for GNSS Breakout with easyC
 
    @note        The user must have the GNSS-L86-M33-SOLDERED library installed in order for this sketch to compile.
-                You can find it at https){//github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library
+                You can find it at github.com/SolderedElectronics/Soldered-GNSS-L86-M33-Arduino-Library
 
 
    @authors     Robert @ soldered.com

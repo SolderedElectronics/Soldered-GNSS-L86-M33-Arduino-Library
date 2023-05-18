@@ -98,7 +98,7 @@ void loop()
     float courseDeg = gnss.getCourseDeg();
     float speed = gnss.getSpeed();
 
-    // Get data related to communication between ATTiny and L86
+    // Get data related to communication between the easyC board (ATTiny) and L86
     uint32_t charsProcessed = gnss.getNumCharsProcessed();
     uint32_t sentencesWithFix = gnss.getNumSentencesWithFix();
     uint32_t failedChecksum = gnss.getNumFailedChecksums();
@@ -136,7 +136,7 @@ void loop()
     delay(1000);
 }
 
-// Functions used for printing floating numbers more easly.
+// Functions used for printing floating numbers more easily
 static void printFloat(float val, int len, int prec)
 {
 
@@ -148,7 +148,7 @@ static void printFloat(float val, int len, int prec)
         Serial.print(' ');
 }
 
-// Functions prints integers (with unsigned long data type).
+// Function that prints integers (with unsigned long data type).
 static void printInt(unsigned long val, int len)
 {
     char sz[32] = "*****************";
@@ -161,7 +161,7 @@ static void printInt(unsigned long val, int len)
     Serial.print(sz);
 }
 
-// Functions print date and time from TinyGPS library date format.
+// Function that print date and time from TinyGPS library date format.
 static void printDateTime(uint8_t month, uint8_t day, uint16_t year, uint8_t hour, uint8_t minute, uint8_t second,
                           uint32_t dateTimeAge)
 {
